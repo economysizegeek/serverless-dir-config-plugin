@@ -31,7 +31,12 @@ hello:
         integration: lambda-proxy
 ```
 
-Keep in mind for the resources there are multiple resouce types.  Make sure you include the type first:
+Keep in mind for the resources there are multiple resource types. I tend to create directories for different groupings (ima, dynamodb,etc)
+ 
+ 
+ 
+ 
+Make sure you include the type first (Resources/Outputs etc):
 ```
 Resources:
   BasicLambdaRole:
