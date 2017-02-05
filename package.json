@@ -1,0 +1,32 @@
+{
+  "name": "serverless-dir-config-plugin",
+  "version": "0.1.0",
+  "description": "This plugin loads serverless.js configurations from set of directories as well as the main file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/economysizegeek/serverless-dir-config-plugin.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless",
+    "plugins",
+    "lambda",
+    "aws",
+    "frontend",
+    "serverless.com"
+  ],
+  "author": "Dirk Elmendorf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/economysizegeek/serverless-dir-config-plugin/issues"
+  },
+  "homepage": "https://github.com/economysizegeek/serverless-dir-config-plugin#readme",
+  "dependencies": {
+    "lodash": "^4.13.1"
+    "js-yaml": "^3.6.1"
+   }
+}
