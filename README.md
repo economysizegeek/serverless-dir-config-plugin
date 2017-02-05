@@ -66,6 +66,14 @@ Resources:
 
 
 ## Configuration
+You need to add it to the plugin section of the serverless.yml
+
+```
+plugins:
+  - serverless-dir-config-plugin
+```
+
+
 Currently the only thing you can configure is if it shows what resources and functions are being loaded.
 If you don't want to see that - set quiet to true.
 
