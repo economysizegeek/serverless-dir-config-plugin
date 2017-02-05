@@ -47,8 +47,10 @@ class DirConfig {
       logger("Adding functions from serverless/functions");
       functions.map(function (func) {
         var function_data = serverless.utils.readFileSync(func);
-        logger("\t\t" + Object.keys(function_data).join(","));
-        serverless.service.functions = _.merge(serverless.service.functions || {}, function_data);
+        if (function_data) {
+          logger("\t\t" + Object.keys(function_data).join(","));
+          serverless.service.functions = _.merge(serverless.service.functions || {}, function_data);
+        }
       });
     }
     var resources = getAllFiles(res_path);
@@ -56,9 +58,11 @@ class DirConfig {
       logger("Adding resources from serverless/resources");
       resources.map(function (res) {
         var resource_data = serverless.utils.readFileSync(res);
-        var res_type = Object.keys(resource_data);
-        logger("\t\t [" + res_type + "] " + Object.keys(resource_data[res_type]).join(","));
-        serverless.service.resources = _.merge(serverless.service.resources || {}, resource_data);
+        if (resource_data) {
+          var res_type = Object.keys(resource_data);
+          logger("\t\t [" + res_type + "] " + Object.keys(resource_data[res_type]).join(","));
+          serverless.service.resources = _.merge(serverless.service.resources || {}, resource_data);
+        }
       });
     }
 

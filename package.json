@@ -1,6 +1,6 @@
 {
   "name": "serverless-dir-config-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This plugin loads serverless.js configurations from set of directories as well as the main file.",
   "main": "index.js",
   "scripts": {
